@@ -7,11 +7,14 @@ gui_config = """
 Section "InputClass"
     Identifier      "Keyboard Defaults"
     MatchIsKeyboard "yes"
-    Optiion         "XkbLayout" "jp"
+    Option         "XkbLayout" "jp"
 EndSection
 """
 lxde = """
 exec startlxde
+"""
+custom_bashrc = """
+setfont Lat2-Terminus16
 """
 
 def call_system(cmd):
@@ -32,6 +35,7 @@ def main():
     for i in range(len(software)):
         print(software[i])
         install(software[i])
+    call_system("visudo")
 
     print("#3 Add New User")
     print("Do you want to add new users? [Y/n]")
@@ -44,16 +48,38 @@ def main():
         call_system("passwd {0}".format(username))
 
     print("#4 Install GUI")
-    software = ['xorg-server', 'xorg-server-utils', 'xorg-xinit', 'mesa', 'xf86-video-fbdev', 'xf86-input-synaptics', 'lxde', 'awesome']
-    for i in range(len(software)):
-        print(software[i])
-        install(software[i])
-    f = open('/etc/X11/xorg.conf.d/10-keyboard.conf', 'w')
-    f.write(gui_config)
-    f.close()
-    f = open('../../../.xinitrc', 'w')
-    f.write(lxde)
-    f.close()
+    print("Do you want to install GUI? [Y/n]")
+    yorn = input('-->')
+    if ((yorn == 'y') or (yorn == 'Y')):
+        software = ['xorg-server', 'xorg-server-utils', 'xorg-xinit', 'mesa', 'xf86-video-fbdev', 'xf86-input-synaptics', 'lxde', 'awesome', 'chromium']
+        for i in range(len(software)):
+            print(software[i])
+            install(software[i])
+        f = open('/etc/X11/xorg.conf.d/10-keyboard.conf', 'w')
+        f.write(gui_config)
+        f.close()
+        print("Type username")
+        username = input('-->')
+        f = open('/home/{0}/.xinitrc'.format(username), 'w')
+        f.write(lxde)
+        f.close()
+
+    print("#5 Custom .bashrc")
+    print("Do you want to custom .bashrc? [Y/n]")
+    yorn = input('-->')
+    if ((yorn == 'y') or (yorn == 'Y')):
+        print("Type usernaem")
+        username = input('-->')
+        f = open('/home/{0}/.bashrc'.format(username), 'a')
+        f.write(custom_bashrc)
+        f.close()
+
+    print("#6 Custom /etc/fstab")
+    print("Do you want to custom /etc/fstab? [Y/n]")
+    yorn = input('-->')
+    if ((yorn == 'y') or (yorn == 'Y')):
+        pass
+
 
 if __name__ == '__main__':
     main()
