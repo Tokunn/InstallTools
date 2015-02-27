@@ -80,6 +80,10 @@ def main():
     if ((yorn == 'y') or (yorn == 'Y')):
         pass
 
+    print("Conplete!")
+    print("Please install yaourt")
+    print("Please install archassault")
+
 
 if __name__ == '__main__':
     main()
