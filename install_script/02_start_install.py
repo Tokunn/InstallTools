@@ -31,7 +31,7 @@ def main():
     call_system("pacman -Syu --noconfirm")
 
     print("#2 Install")
-    software = ['vim', 'tmux', 'sudo', 'visudo', 'traceroute', 'nmap', 'gdb', 'wireshark-gtk', 'net-tools', 'wget', 'otf-ipafont', 'python2-pyserial', 'vim-systemd', 'python2-pygame', 'openssh', 'acpi', 'conky', 'python2-numpy', 'python2-scipy', 'python2-pip', 'python2-matplotlib', 'ipython3', 'ipython2', 'python2-pandas', 'python2-sympy', 'xmonad', 'python3-numpy', 'python3-scipy', 'python3-pip', 'python3-matplotlib','python3-pandas', 'python3-sympy', 'scapy']
+    software = ['vim', 'tmux', 'sudo', 'visudo', 'traceroute', 'nmap', 'gdb', 'wireshark-gtk', 'net-tools', 'wget', 'otf-ipafont', 'python2-pyserial', 'vim-systemd', 'python2-pygame', 'openssh', 'acpi', 'conky', 'python2-numpy', 'python2-scipy', 'python2-pip', 'python2-matplotlib', 'ipython3', 'ipython2', 'python2-pandas', 'python2-sympy', 'xmonad', 'python3-numpy', 'python3-scipy', 'python3-pip', 'python3-matplotlib','python3-pandas', 'python3-sympy', 'scapy', 'dbus-glib', 'gtk2', 'libsm', 'xloadimage']
     for i in range(len(software)):
         print(software[i])
         install(software[i])
@@ -79,6 +79,9 @@ def main():
     yorn = input('-->')
     if ((yorn == 'y') or (yorn == 'Y')):
         pass
+        # TODO
+
+    # TODO install dropbox
 
     print("Conplete!")
     print("Please install yaourt")
