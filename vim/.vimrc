@@ -17,3 +17,6 @@ set autoindent
 
 filetype off
 filetype plugin indent on
+
+
+autocmd BufNewFile *.py :0r $HOME/.vim/template/python.py | :echo "Python Template read."

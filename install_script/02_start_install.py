@@ -87,6 +87,7 @@ def main():
     print("Conplete!")
     print("Please install yaourt")
     print("Please install archassault")
+    print("Please install nkf")
 
 
 if __name__ == '__main__':
