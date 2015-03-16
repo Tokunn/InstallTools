@@ -16,5 +16,3 @@ if __name__ == '__main__':
         main()
     except KeyboardInterrupt:
         print("\nCtrl+C -> END")
-
-# test

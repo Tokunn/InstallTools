@@ -31,7 +31,7 @@ def main():
 
     print("\n###vim/template")
     get_ipython().system('ls -l /home/tokunn/.vim/template')
-    get_ipython().system('cp -r /home/tokunn/.vim/template /home/tokunn/Program/InstallTools/vim/.vim/template')
+    get_ipython().system('cp -r /home/tokunn/.vim/template/ /home/tokunn/Program/InstallTools/vim/.vim/')
     get_ipython().system('ls -l /home/tokunn/Program/InstallTools/vim/.vim/template')
 
 if __name__ == '__main__':
