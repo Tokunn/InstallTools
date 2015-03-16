@@ -55,15 +55,18 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
 {
-    awful.layout.suit.floating,
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.left,
-    -- awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.top,
-    -- awful.layout.suit.fair,
-    awful.layout.suit.fair.horizontal,
-    -- awful.layout.suit.spiral,
     awful.layout.suit.spiral.dwindle,
+    awful.layout.suit.max,
+
+    -- awful.layout.suit.floating,
+    -- awful.layout.suit.tile,
+    -- awful.layout.suit.tile.left,
+    awful.layout.suit.tile.bottom,
+    -- awful.layout.suit.tile.top,
+    -- awful.layout.suit.fair,
+    -- awful.layout.suit.fair.horizontal,
+    -- awful.layout.suit.spiral,
+    -- awful.layout.suit.spiral.dwindle,
     -- awful.layout.suit.max,
     -- awful.layout.suit.max.fullscreen,
     -- awful.layout.suit.magnifier
@@ -259,6 +262,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
+
 
     -- Prompt
     awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),

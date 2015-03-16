@@ -1,0 +1,22 @@
+
+set defsearch=google
+
+set hlsearch
+
+map j 3<C-e>
+map k 3<C-y>
+
+no dd :tabclose<CR>
+map d <NOP>
+
+map H <A-Left>
+map L <A-Right>
+
+"map h gT
+"map l gt
+
+map <C-c> :echo Yank!<CR>Y
+
+set hintchars=ifjklasdhguonmerwc
+
+hi Hint z-index:5000; font-size:14px; color:white; background-color:red; border-color:ButtonShadow; border-width:0px; border-style:solid; padding:0px 2px 0px 2px; position:absolute; font-family: Menlo, Consolas, Monaco, monospace; text-transform: uppercase;

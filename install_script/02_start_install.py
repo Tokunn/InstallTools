@@ -11,7 +11,8 @@ Section "InputClass"
 EndSection
 """
 lxde = """
-exec startlxde
+exec awesome
+#exec startlxde
 """
 custom_bashrc = """
 setfont Lat2-Terminus16
@@ -31,7 +32,7 @@ def main():
     call_system("pacman -Syu --noconfirm")
 
     print("#2 Install")
-    software = ['vim', 'tmux', 'sudo', 'visudo', 'traceroute', 'nmap', 'gdb', 'wireshark-gtk', 'net-tools', 'wget', 'otf-ipafont', 'python2-pyserial', 'vim-systemd', 'python2-pygame', 'openssh', 'acpi', 'conky', 'python2-numpy', 'python2-scipy', 'python2-pip', 'python2-matplotlib', 'ipython3', 'ipython2', 'python2-pandas', 'python2-sympy', 'xmonad', 'python3-numpy', 'python3-scipy', 'python3-pip', 'python3-matplotlib','python3-pandas', 'python3-sympy', 'scapy', 'dbus-glib', 'gtk2', 'libsm', 'xloadimage']
+    software = ['vim', 'tmux', 'sudo', 'visudo', 'traceroute', 'nmap', 'gdb', 'wireshark-gtk', 'net-tools', 'wget', 'otf-ipafont', 'python2-pyserial', 'vim-systemd', 'python2-pygame', 'openssh', 'acpi', 'python2-numpy', 'python2-scipy', 'python2-pip', 'python2-matplotlib', 'ipython3', 'ipython2', 'python2-pandas', 'python2-sympy', 'python3-numpy', 'python3-scipy', 'python3-pip', 'python3-matplotlib','python3-pandas', 'python3-sympy', 'scapy', 'dbus-glib', 'gtk2', 'libsm']
     for i in range(len(software)):
         print(software[i])
         install(software[i])
@@ -51,7 +52,7 @@ def main():
     print("Do you want to install GUI? [Y/n]")
     yorn = input('-->')
     if ((yorn == 'y') or (yorn == 'Y')):
-        software = ['xorg-server', 'xorg-server-utils', 'xorg-xinit', 'mesa', 'xf86-video-fbdev', 'xf86-input-synaptics', 'lxde', 'awesome', 'chromium']
+        software = ['xorg-server', 'xorg-server-utils', 'xorg-xinit', 'mesa', 'xf86-video-fbdev', 'xf86-input-synaptics', 'lxde', 'awesome', 'chromium', 'firefox', 'alsa-utils', 'conky', 'xmonad', 'xloadimage']
         for i in range(len(software)):
             print(software[i])
             install(software[i])
