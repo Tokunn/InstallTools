@@ -453,4 +453,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- {{{ autostart
     awful.util.spawn_with_shell("conky -b")
     awful.util.spawn_with_shell("ibus-daemon")
+    awful.util.spawn_with_shell("dropbox")
 -- }}}

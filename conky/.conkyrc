@@ -15,7 +15,8 @@ draw_shades yes
 draw_outline no
 draw_borders no
 draw_graph_borders yes
-default_color white
+#default_color white
+default_color green
 default_shade_color black
 default_outline_color white
 alignment top_right
@@ -27,6 +28,7 @@ cpu_avg_samples 2
 override_utf8_locale no
 
 TEXT
+
 ${font sans-serif:bold:size=8}SYSTEM ${hr 2}
 ${font sans-serif:normal:size=8}$sysname $kernel $alignr $machine
 Host:$alignr$nodename
