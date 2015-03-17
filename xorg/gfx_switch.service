@@ -1,0 +1,10 @@
+[Unit]
+Description=Change /etc/X11/xorg.conf to change GPU
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/bin/gfx_switch.py
+
+[Install]
+WantedBy=multi-user.target
