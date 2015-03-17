@@ -57,8 +57,13 @@ $font${top_mem name 4}${alignr}${top mem 4} %
 $font${top_mem name 5}${alignr}${top mem 5} %
 
 ${font sans-serif:bold:size=8}NETWORK ${hr 2}
-${font sans-serif:normal:size=8}IP address: $alignr ${addr eth0}
-${downspeedgraph eth0}
-DLS:${downspeed eth0} kb/s $alignr total: ${totaldown eth0}
-${upspeedgraph eth0}
-ULS:${upspeed eth0} kb/s $alignr total: ${totalup eth0}
+${font sans-serif:normal:size=8}IP address: $alignr ${addr enp4s0}
+${downspeedgraph enp4s0}
+DLS:${downspeed enp4s0} kb/s $alignr total: ${totaldown enp4s0}
+${upspeedgraph enp4s0}
+ULS:${upspeed enp4s0} kb/s $alignr total: ${totalup enp4s0}
+
+${font sans-serif:bold:size=8}BATTERY ${hr 2}
+${font sans-serif:normal:size=8}State: ${battery BAT1}
+Time: ${battery_time BAT1}
+${battery_bar 5,200 BAT1}
