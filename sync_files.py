@@ -34,6 +34,11 @@ def main():
     get_ipython().system('cp -r /home/tokunn/.vim/template/ /home/tokunn/Program/InstallTools/vim/.vim/')
     get_ipython().system('ls -l /home/tokunn/Program/InstallTools/vim/.vim/template')
 
+    print("\n###xinitrc")
+    get_ipython().system('ls -l /home/tokunn/.xinitrc')
+    get_ipython().system('cp /home/tokunn/.xinitrc /home/tokunn/Program/InstallTools/xorg/.xinitrc')
+    get_ipython().system('ls -l /home/tokunn/Program/InstallTools/xorg/.xinitrc')
+
 if __name__ == '__main__':
     try:
         main()
