@@ -46,3 +46,7 @@ bindkey -e
 zstyle ':completion:*' format '%BCompleting %d%b'
 zstyle ':completion:*' group-name ''
 autoload -U compinit && compinit
+
+
+#touch pad off
+synclient TouchpadOff=1
