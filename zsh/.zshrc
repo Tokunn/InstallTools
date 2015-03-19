@@ -9,19 +9,22 @@
 ###
 # Set Shell variable
 # WORDCHARS=$WORDCHARS:s,/,,
-HISTSIZE=200 HISTFILE=~/.zhistory SAVEHIST=180
+HISTSIZE=10000 HISTFILE=~/.zsh_history SAVEHIST=10000
 #PROMPT='%m{%n}%% '
 PROMPT='%F{green}%n%f@%F{cyan}%m%f %F{blue}%*%f %F{yellow}[%~]%f $ '
 #RPROMPT='%F{yellow}[%~]%f'
-#RPROMPT='[%~] %F{red}read%f %F{green}green%f %F{yellow}yellow%f %F{blue}blue%f %F{magenta}magenta%f %F{while}while%f'
 
 # Set shell options
+setopt hist_verify
 setopt auto_cd auto_remove_slash auto_name_dirs 
 setopt extended_history hist_ignore_dups hist_ignore_space prompt_subst
 setopt extended_glob list_types no_beep always_last_prompt
 setopt cdable_vars sh_word_split auto_param_keys pushd_ignore_dups
 #setopt auto_menu  correct rm_star_silent sun_keyboard_hack
-#setopt share_history inc_append_history
+setopt auto_menu
+setopt CORRECTALL
+setopt share_history inc_append_history
+setopt correctall
 
 # Alias and functions
 alias copy='cp -ip' del='rm -i' move='mv -i'
