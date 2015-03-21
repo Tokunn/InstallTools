@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto config
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/bin/auto_config.py
+
+[Install]
+WantedBy=multi-user.target

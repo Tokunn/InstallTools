@@ -45,10 +45,12 @@ def main():
     get_ipython().system('ls -l /home/tokunn/Program/InstallTools/zsh/.zshrc')
 
     print("\n@@@ Manual Sync @@@")
-    print("gfx_switch.py")
-    print("gfx_switch.service")
-    print("xorg.conf.speed")
-    print("xorg.conf.stamina")
+    print("\tgfx_switch.py")
+    print("\tgfx_switch.service")
+    print("\txorg.conf.speed")
+    print("\txorg.conf.stamina")
+    print("\tauto_config.py")
+    print("\tauto_config.service")
 
 if __name__ == '__main__':
     try:
