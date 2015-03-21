@@ -39,6 +39,17 @@ def main():
     get_ipython().system('cp /home/tokunn/.xinitrc /home/tokunn/Program/InstallTools/xorg/.xinitrc')
     get_ipython().system('ls -l /home/tokunn/Program/InstallTools/xorg/.xinitrc')
 
+    print("\n###zshrc")
+    get_ipython().system('ls -l /home/tokunn/.zshrc')
+    get_ipython().system('cp /home/tokunn/.zshrc /home/tokunn/Program/InstallTools/zsh/.zshrc')
+    get_ipython().system('ls -l /home/tokunn/Program/InstallTools/zsh/.zshrc')
+
+    print("\n@@@ Manual Sync @@@")
+    print("gfx_switch.py")
+    print("gfx_switch.service")
+    print("xorg.conf.speed")
+    print("xorg.conf.stamina")
+
 if __name__ == '__main__':
     try:
         main()
