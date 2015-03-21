@@ -52,4 +52,4 @@ autoload -U compinit && compinit
 
 
 #touch pad off
-synclient TouchpadOff=1
+#synclient TouchpadOff=1
