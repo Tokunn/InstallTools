@@ -52,7 +52,7 @@ def main():
     print("Do you want to install GUI? [Y/n]")
     yorn = input('-->')
     if ((yorn == 'y') or (yorn == 'Y')):
-        software = ['xorg-server', 'xorg-server-utils', 'xorg-xinit', 'mesa', 'xf86-video-fbdev', 'xf86-input-synaptics', 'xf86-video-intel', 'lxde', 'awesome', 'chromium', 'firefox', 'alsa-utils', 'conky', 'xmonad', 'xloadimage', 'xorg-xrandr', 'flashplugin', 'lib32-flashplugin']
+        software = ['xorg-server', 'xorg-server-utils', 'xorg-xinit', 'mesa', 'xf86-video-fbdev', 'xf86-input-synaptics', 'xf86-video-intel', 'lxde', 'awesome', 'chromium', 'firefox', 'alsa-utils', 'conky', 'xmonad', 'xloadimage', 'xorg-xrandr', 'flashplugin', 'lib32-flashplugin', 'terminator']
         for i in range(len(software)):
             print(software[i])
             install(software[i])
