@@ -22,9 +22,8 @@ setopt extended_glob list_types no_beep always_last_prompt
 setopt cdable_vars sh_word_split auto_param_keys pushd_ignore_dups
 #setopt auto_menu  correct rm_star_silent sun_keyboard_hack
 setopt auto_menu
-setopt CORRECTALL
 setopt share_history inc_append_history
-setopt correctall
+setopt correct
 
 # Alias and functions
 alias copy='cp -ip' del='rm -i' move='mv -i'
