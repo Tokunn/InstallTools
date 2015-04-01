@@ -89,7 +89,8 @@ def main():
     print("Please install archassault")
     print("Please install nkf")
     print("Please install Ricty")
-    print("Please nvidia")
+    print("Please install nvidia")
+    print("Please setting lm_sensors")
 
 
 if __name__ == '__main__':
