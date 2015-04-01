@@ -31,25 +31,30 @@ TEXT
 
 ${font sans-serif:bold:size=8}SYSTEM ${hr 2}
 ${font sans-serif:normal:size=8}$sysname $kernel $alignr $machine
-Host:$alignr$nodename
+#Host:$alignr$nodename
 Uptime:$alignr$uptime
-File System: $alignr${fs_type}
+#File System: $alignr${fs_type}
+
 
 ${font sans-serif:bold:size=8}PROCESSORS ${hr 2}
-${font sans-serif:normal:size=8}${cpugraph cpu}
-CPU: ${cpu cpu}% ${cpubar cpu}
+${font sans-serif:normal:size=8}${cpugraph 20,200 cpu}
+CPU: ${cpu  cpu}% ${cpubar 5,100 cpu} ${execi 1 sensors | grep 'Physical id 0' | cut -c18-21}C
+${cpugraph 20,47 cpu1} ${cpugraph 20,47 cpu2} ${cpugraph 20,47 cpu3} ${cpugraph 20,47 cpu4}
+
 
 ${font sans-serif:bold:size=8}MEMORY ${hr 2}
 ${font sans-serif:normal:size=8}RAM $alignc $mem / $memmax $alignr $memperc%
 $membar
+
 
 ${font sans-serif:bold:size=8}DISKS ${hr 2}
 ${font sans-serif:normal:size=8}/ $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
 ${fs_bar /}
 ${font sans-serif:normal:size=8}/home $alignc ${fs_used /home} / ${fs_size /home} $alignr ${fs_used_perc /home}%
 ${fs_bar /home}
-SWAP $alignc ${swap} / ${swapmax} $alignr ${swapperc}%
-${swapbar}
+#SWAP $alignc ${swap} / ${swapmax} $alignr ${swapperc}%
+#${swapbar}
+
 
 ${font sans-serif:bold:size=8}TOP PROCESSES ${hr 2}
 ${font sans-serif:normal:size=8}${top_mem name 1}${alignr}${top mem 1} %
@@ -58,28 +63,24 @@ $font${top_mem name 3}${alignr}${top mem 3} %
 $font${top_mem name 4}${alignr}${top mem 4} %
 $font${top_mem name 5}${alignr}${top mem 5} %
 $font${top_mem name 6}${alignr}${top mem 6} %
-$font${top_mem name 7}${alignr}${top mem 7} %
-$font${top_mem name 8}${alignr}${top mem 8} %
-$font${top_mem name 9}${alignr}${top mem 9} %
+#$font${top_mem name 7}${alignr}${top mem 7} %
+#$font${top_mem name 8}${alignr}${top mem 8} %
+#$font${top_mem name 9}${alignr}${top mem 9} %
+
 
 ${font sans-serif:bold:size=8}NETWORK ${hr 2}
 enp4s0
 ${font sans-serif:normal:size=8}IP address: $alignr ${addr enp4s0}
-${downspeedgraph enp4s0}
-Download:${downspeed enp4s0} kb/s $alignr
-DTotal: ${totaldown enp4s0}
-${upspeedgraph enp4s0}
-Upload:${upspeed enp4s0} kb/s $alignr
-UTotal: ${totalup enp4s0}
+${downspeedgraph 20,100 enp4s0} ${upspeedgraph 20,100 enp4s0}
+Down:${downspeed enp4s0} kb/s $alignr Up:${upspeed enp4s0} kb/s $alignr
+DTotal: ${totaldown enp4s0} $alignr UTotal: ${totalup enp4s0}
 
 ${font sans-serif:bold:size=8}wlp2s0
 ${font sans-serif:normal:size=8}IP address: $alignr ${addr wlp2s0}
-${downspeedgraph wlp2s0}
-Download:${downspeed wlp2s0} kb/s $alignr
-DTotal: ${totaldown wlp2s0}
-${upspeedgraph wlp2s0}
-Upload:${upspeed wlp2s0} kb/s $alignr
-UTotal: ${totalup wlp2s0}
+${downspeedgraph 20,100 wlp2s0} ${upspeedgraph 20,100 wlp2s0}
+Down:${downspeed wlp2s0} kb/s $alignr Up:${upspeed wlp2s0} kb/s $alignr
+DTotal: ${totaldown wlp2s0} $alignr UTotal: ${totalup wlp2s0}
+
 
 ${font sans-serif:bold:size=8}BATTERY ${hr 2}
 ${font sans-serif:normal:size=8}State: ${battery BAT1}
