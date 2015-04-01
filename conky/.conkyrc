@@ -36,8 +36,8 @@ Uptime:$alignr$uptime
 File System: $alignr${fs_type}
 
 ${font sans-serif:bold:size=8}PROCESSORS ${hr 2}
-${font sans-serif:normal:size=8}${cpugraph cpu1}
-CPU1: ${cpu cpu1}% ${cpubar cpu1}
+${font sans-serif:normal:size=8}${cpugraph cpu}
+CPU: ${cpu cpu}% ${cpubar cpu}
 
 ${font sans-serif:bold:size=8}MEMORY ${hr 2}
 ${font sans-serif:normal:size=8}RAM $alignc $mem / $memmax $alignr $memperc%
