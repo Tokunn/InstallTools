@@ -10,6 +10,7 @@
 # Set Shell variable
 # WORDCHARS=$WORDCHARS:s,/,,
 HISTSIZE=10000 HISTFILE=~/.zsh_history SAVEHIST=10000
+setopt hist_ignore_dups
 #PROMPT='%m{%n}%% '
 PROMPT='%F{green}%n%f@%F{cyan}%m%f %F{blue}%*%f %F{yellow}[%~]%f $ '
 #RPROMPT='%F{yellow}[%~]%f'
