@@ -91,6 +91,7 @@ def main():
     print("Please install Ricty")
     print("Please install nvidia")
     print("Please setting lm_sensors")
+    print("Please install ibus-mozc")
 
 
 if __name__ == '__main__':
