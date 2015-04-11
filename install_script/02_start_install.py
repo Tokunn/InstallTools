@@ -8,6 +8,7 @@ import os, sys
 import subprocess
 
 SCRIPTDIR = os.path.dirname(os.path.abspath(__file__))
+HOMEDIR = os.environ['HOME']
 PKGFILE = os.path.join(SCRIPTDIR, 'pkglist')
 
 
