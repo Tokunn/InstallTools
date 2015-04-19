@@ -86,7 +86,6 @@ man-pages
 mariadb
 mdadm
 metasploit-git
-minecraft
 mozc
 nano
 net-tools
@@ -105,6 +104,7 @@ pcmanfm
 pcmciautils
 perl
 pkg-config
+powertop
 procps-ng
 psmisc
 python
