@@ -1,6 +1,6 @@
 background yes
 use_xft yes
-xftfont Sans:size=8
+xftfont Sans:size=10
 xftalpha 1
 update_interval 1.0
 total_run_times 0
@@ -29,35 +29,35 @@ override_utf8_locale no
 
 TEXT
 
-${font sans-serif:bold:size=8}SYSTEM ${hr 2}
-${font sans-serif:normal:size=8}$sysname $kernel $alignr $machine
+${font sans-serif:bold:size=10}SYSTEM ${hr 2}
+${font sans-serif:normal:size=10}$sysname $kernel $alignr $machine
 #Host:$alignr$nodename
 Uptime:$alignr$uptime
 #File System: $alignr${fs_type}
 
 
-${font sans-serif:bold:size=8}PROCESSORS ${hr 2}
-${font sans-serif:normal:size=8}${cpugraph 20,200 cpu}
+${font sans-serif:bold:size=10}PROCESSORS ${hr 2}
+${font sans-serif:normal:size=10}${cpugraph 20,200 cpu}
 CPU: ${cpu  cpu}% ${cpubar 5,100 cpu} ${execi 1 sensors | grep 'Physical id 0' | cut -c18-21}C
 ${cpugraph 20,47 cpu1} ${cpugraph 20,47 cpu2} ${cpugraph 20,47 cpu3} ${cpugraph 20,47 cpu4}
 
 
-${font sans-serif:bold:size=8}MEMORY ${hr 2}
-${font sans-serif:normal:size=8}RAM $alignc $mem / $memmax $alignr $memperc%
+${font sans-serif:bold:size=10}MEMORY ${hr 2}
+${font sans-serif:normal:size=10}RAM $alignc $mem / $memmax $alignr $memperc%
 $membar
 
 
-${font sans-serif:bold:size=8}DISKS ${hr 2}
-${font sans-serif:normal:size=8}/ $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
+${font sans-serif:bold:size=10}DISKS ${hr 2}
+${font sans-serif:normal:size=10}/ $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
 ${fs_bar /}
-${font sans-serif:normal:size=8}/home $alignc ${fs_used /home} / ${fs_size /home} $alignr ${fs_used_perc /home}%
+${font sans-serif:normal:size=10}/home $alignc ${fs_used /home} / ${fs_size /home} $alignr ${fs_used_perc /home}%
 ${fs_bar /home}
 #SWAP $alignc ${swap} / ${swapmax} $alignr ${swapperc}%
 #${swapbar}
 
 
-${font sans-serif:bold:size=8}TOP PROCESSES ${hr 2}
-${font sans-serif:normal:size=8}${top_mem name 1}${alignr}${top mem 1} %
+${font sans-serif:bold:size=10}TOP PROCESSES ${hr 2}
+${font sans-serif:normal:size=10}${top_mem name 1}${alignr}${top mem 1} %
 ${top_mem name 2}${alignr}${top mem 2} %
 $font${top_mem name 3}${alignr}${top mem 3} %
 $font${top_mem name 4}${alignr}${top mem 4} %
@@ -68,21 +68,21 @@ $font${top_mem name 6}${alignr}${top mem 6} %
 #$font${top_mem name 9}${alignr}${top mem 9} %
 
 
-${font sans-serif:bold:size=8}NETWORK ${hr 2}
+${font sans-serif:bold:size=10}NETWORK ${hr 2}
 enp4s0
-${font sans-serif:normal:size=8}IP address: $alignr ${addr enp4s0}
+${font sans-serif:normal:size=10}IP address: $alignr ${addr enp4s0}
 ${downspeedgraph enp4s0} #${upspeedgraph 20,100 enp4s0}
 Down:${downspeed enp4s0}/s $alignr Up:${upspeed enp4s0}/s $alignr
 DTotal: ${totaldown enp4s0} $alignr UTotal: ${totalup enp4s0}
 
-${font sans-serif:bold:size=8}wlp2s0
-${font sans-serif:normal:size=8}IP address: $alignr ${addr wlp2s0}
+${font sans-serif:bold:size=10}wlp2s0
+${font sans-serif:normal:size=10}IP address: $alignr ${addr wlp2s0}
 ${downspeedgraph wlp2s0} #${upspeedgraph 20,100 wlp2s0}
 Down:${downspeed wlp2s0}/s $alignr Up:${upspeed wlp2s0}/s $alignr
 DTotal: ${totaldown wlp2s0} $alignr UTotal: ${totalup wlp2s0}
 
 
-${font sans-serif:bold:size=8}BATTERY ${hr 2}
-${font sans-serif:normal:size=8}State: ${battery BAT1}
+${font sans-serif:bold:size=10}BATTERY ${hr 2}
+${font sans-serif:normal:size=10}State: ${battery BAT1}
 Time: ${battery_time BAT1}
 ${battery_bar 5,200 BAT1}
