@@ -21,6 +21,7 @@ dhcpcd
 dialog
 diffutils
 e2fsprogs
+eog
 fakeroot
 file
 filesystem
@@ -35,6 +36,7 @@ gcc-libs
 gdb
 gedit
 gettext
+gimp
 git
 glibc
 gnu-netcat
@@ -58,6 +60,7 @@ less
 lib32-flashplugin
 lib32-mesa
 lib32-mesa-libgl
+libreoffice-fresh
 libtool
 licenses
 linux
@@ -88,6 +91,7 @@ mdadm
 metasploit-git
 mozc
 nano
+nautilus
 net-tools
 netctl
 nkf
