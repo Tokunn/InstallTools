@@ -20,6 +20,7 @@ device-mapper
 dhcpcd
 dialog
 diffutils
+dosfstools
 e2fsprogs
 eog
 fakeroot
@@ -90,6 +91,7 @@ mariadb
 mdadm
 metasploit-git
 mozc
+mpg123
 nano
 nautilus
 net-tools
@@ -127,6 +129,7 @@ python2-sympy
 reiserfsprogs
 s-nail
 scapy
+scrot
 sed
 shadow
 sl
