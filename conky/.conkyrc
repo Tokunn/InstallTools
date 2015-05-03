@@ -38,8 +38,8 @@ Uptime:$alignr$uptime
 
 ${font sans-serif:bold:size=10}PROCESSORS ${hr 2}
 ${font sans-serif:normal:size=10}${cpugraph 20,200 cpu}
-CPU: ${cpu  cpu}% ${cpubar 5,100 cpu} ${execi 1 sensors | grep 'Physical id 0' | cut -c18-21}C
-${cpugraph 20,47 cpu1} ${cpugraph 20,47 cpu2} ${cpugraph 20,47 cpu3} ${cpugraph 20,47 cpu4}
+CPU: ${cpu  cpu}% ${cpubar 5, cpu} 
+$freq_g GHz   ${execi 1 sensors | grep 'Physical id 0' | cut -c18-21}C
 
 
 ${font sans-serif:bold:size=10}MEMORY ${hr 2}
