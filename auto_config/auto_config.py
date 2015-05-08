@@ -9,6 +9,7 @@ import os, sys
 def main():
     get_ipython().system(' echo 25 > /sys/class/backlight/intel_backlight/brightness')
     get_ipython().system(' echo  0 > /sys/devices/platform/sony-laptop/kbd_backlight')
+    get_ipython().system(' powertop --auto-tune')
 
 if __name__ == '__main__':
     try:
