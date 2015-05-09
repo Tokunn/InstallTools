@@ -49,6 +49,8 @@ gst-libav
 gst-plugins-good
 gzip
 hdparm
+hwinfo
+i7z
 ibus-mozc
 inetutils
 iproute2
@@ -109,6 +111,7 @@ pciutils
 pcmanfm
 pcmciautils
 perl
+php
 pkg-config
 powertop
 procps-ng
