@@ -1,5 +1,5 @@
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
-synaemon -k
+#synaemon -k
 exec awesome
 #exec startlxde
