@@ -1,5 +1,6 @@
 acpi
 alsa-utils
+apache
 archassault-keyring
 archassault-mirrorlist
 arduino
@@ -112,6 +113,7 @@ pcmanfm
 pcmciautils
 perl
 php
+php-apache
 pkg-config
 powertop
 procps-ng
