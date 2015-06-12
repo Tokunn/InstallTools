@@ -119,6 +119,7 @@ powertop
 procps-ng
 psmisc
 python
+python-matplotlib
 python-numpy
 python-pip
 python-scipy
@@ -134,6 +135,7 @@ python2-sympy
 reiserfsprogs
 s-nail
 scapy
+scilab
 scrot
 sed
 shadow
