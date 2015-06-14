@@ -2,7 +2,6 @@ acpi
 alsa-utils
 apache
 archassault-keyring
-archassault-mirrorlist
 arduino
 autoconf
 automake
@@ -62,8 +61,6 @@ iw
 jfsutils
 less
 lib32-flashplugin
-lib32-mesa
-lib32-mesa-libgl
 libreoffice-fresh
 libtool
 licenses
@@ -79,11 +76,9 @@ lxde-icon-theme
 lxdm
 lxinput
 lxlauncher
-lxmenu-data
 lxmusic
 lxpanel
 lxrandr
-lxsession
 lxtask
 lxterminal
 m4
@@ -99,10 +94,8 @@ nano
 nautilus
 net-tools
 netctl
-nkf
 nmap
 nvidia
-openbox
 openssh
 os-prober
 otf-ipafont
@@ -120,12 +113,10 @@ procps-ng
 psmisc
 python
 python-matplotlib
-python-numpy
 python-pip
 python-scipy
 python2
 python2-matplotlib
-python2-numpy
 python2-pandas
 python2-pip
 python2-pygame
@@ -148,6 +139,7 @@ terminator
 texinfo
 tmux
 traceroute
+ttf-inconsolata
 unzip
 usbutils
 util-linux
@@ -166,7 +158,6 @@ xf86-video-intel
 xfsprogs
 xloadimage
 xmonad
-xorg-server
 xorg-server-utils
 xorg-xev
 xorg-xinit
