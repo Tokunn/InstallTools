@@ -3,6 +3,6 @@
 systemctl enable dhcpcd.service
 
 pacman -Syu --noconfirm
-pacman -S git python2 python3 --noconfirm
+pacman -S git python2 python3 ipython3 --noconfirm
 
 ./02_start_install.py
