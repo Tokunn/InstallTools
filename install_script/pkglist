@@ -6,6 +6,7 @@ archassault-keyring
 arduino
 autoconf
 automake
+automake1.11
 awesome
 bash
 binutils
@@ -26,6 +27,7 @@ dosfstools
 e2fsprogs
 eog
 fakeroot
+fiddler
 file
 filesystem
 findutils
@@ -53,6 +55,7 @@ gst-plugins-good
 gzip
 hdparm
 hwinfo
+hydra
 i7z
 ibus-mozc
 inetutils
@@ -99,6 +102,7 @@ net-tools
 netctl
 nkf
 nmap
+ntfs-3g
 ntp
 nvidia
 opencv
@@ -118,9 +122,15 @@ powertop
 procps-ng
 psmisc
 python
+python-catkin-pkg
+python-empy
 python-matplotlib
+python-nose
 python-pip
 python-scipy
+python-termcolor
+python-urllib3
+python-yaml
 python2
 python2-matplotlib
 python2-pandas
@@ -130,6 +140,9 @@ python2-pyserial
 python2-scipy
 python2-sympy
 reiserfsprogs
+ros-indigo-stage
+ros-indigo-stage-ros
+ros-indigo-vision-opencv
 s-nail
 scapy
 scilab
