@@ -50,3 +50,12 @@ bindkey -e
 zstyle ':completion:*' format '%BCompleting %d%b'
 zstyle ':completion:*' group-name ''
 autoload -U compinit && compinit
+
+#indigo()
+#{
+    #cd /opt/ros/indigo/
+    #source /opt/ros/indigo/setup.zsh
+    #export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages
+    #export PKG_CONFIG_PATH="/opt/ros/indigo/lib/pkgconfig"
+    #cd ~/
+#}
