@@ -1,5 +1,6 @@
 acpi
 acroread
+afur-makepkg
 alsa-utils
 apache
 archassault-keyring
@@ -15,6 +16,9 @@ blender
 bzip2
 cheese
 chromium
+clang
+cmake
+collada-dom
 conky
 coreutils
 cpulimit
@@ -24,6 +28,7 @@ dhcpcd
 dialog
 diffutils
 dosfstools
+dtc-git-patched
 e2fsprogs
 eog
 fakeroot
@@ -44,6 +49,7 @@ gettext
 gimp
 git
 glibc
+gnome-system-monitor
 gnu-netcat
 gparted
 gpicview
@@ -54,6 +60,7 @@ gst-libav
 gst-plugins-good
 gzip
 hdparm
+hostapd
 hwinfo
 hydra
 i7z
@@ -112,6 +119,7 @@ otf-ipafont
 pacman
 patch
 pciutils
+pcl
 pcmanfm
 pcmciautils
 perl
@@ -122,7 +130,6 @@ powertop
 procps-ng
 psmisc
 python
-python-catkin-pkg
 python-empy
 python-matplotlib
 python-nose
@@ -140,12 +147,14 @@ python2-pyserial
 python2-scipy
 python2-sympy
 reiserfsprogs
-ros-indigo-stage
-ros-indigo-stage-ros
-ros-indigo-vision-opencv
+ros-indigo-catkin
+ros-indigo-desktop-full
+ros-indigo-pcl-conversions
+ros-indigo-ros
 s-nail
 scapy
 scilab
+screen
 scrot
 sed
 shadow
@@ -202,4 +211,5 @@ xorg-server-utils
 xorg-xev
 xorg-xinit
 yaourt
+youtube-dl
 zsh
