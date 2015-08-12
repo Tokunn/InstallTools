@@ -37,7 +37,6 @@ file
 filesystem
 findutils
 firefox
-flashplugin
 flex
 fontforge
 gawk
@@ -107,6 +106,7 @@ nano
 nautilus
 net-tools
 netctl
+nginx
 nkf
 nmap
 ntfs-3g
@@ -125,6 +125,7 @@ pcmciautils
 perl
 php
 php-apache
+php-fpm
 pkg-config
 powertop
 procps-ng
