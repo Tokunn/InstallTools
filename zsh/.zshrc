@@ -36,11 +36,13 @@ alias ls='ls -F --color' la='ls -a' ll='ls -la'
 mdcd ()		{mkdir -p "$@" && cd "$*[-1]"}
 mdpu ()		{mkdir -p "$@" && pushd "$*[-1]"}
 alias pu=pushd po=popd dirs='dirs -v'
+alias grep="grep --color=auto"
 
 # Suffix aliases
 alias -s pdf=acroread dvi=xdvi 
 alias -s {odt,ods,odp,doc,xls,ppt}=soffice
 alias -s {tgz,lzh,zip,arc}=file-roller
+
 
 # binding keys
 bindkey -e
@@ -49,13 +51,27 @@ bindkey -e
 
 zstyle ':completion:*' format '%BCompleting %d%b'
 zstyle ':completion:*' group-name ''
+zstyle ':completion:*:cd:*' tag-order local-directories path-directories
 autoload -U compinit && compinit
 
 #indigo()
 #{
     #cd /opt/ros/indigo/
-    #source /opt/ros/indigo/setup.zsh
-    #export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages
-    #export PKG_CONFIG_PATH="/opt/ros/indigo/lib/pkgconfig"
+    source /opt/ros/indigo/setup.zsh
+    export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages:/usr/lib/python3.4/site-packages/
+    export PKG_CONFIG_PATH="/opt/ros/indigo/lib/pkgconfig"
+    export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages
+    source /home/tokunn/catkin_ws/devel/setup.zsh
     #cd ~/
 #}
+
+#androidconf()
+#{
+    export PATH="$PATH:/home/tokunn/Program/android-studio/bin"
+#}
+
+multiple()
+{
+    export ROS_MASTER_URI=http://172.16.14.224:11311
+    export ROS_IP=172.16.14.114
+}
