@@ -1,4 +1,4 @@
-#!/usr/bin/env ipython3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 ### H27 Mar 16
