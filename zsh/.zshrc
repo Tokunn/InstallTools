@@ -54,24 +54,24 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*:cd:*' tag-order local-directories path-directories
 autoload -U compinit && compinit
 
-#indigo()
+##indigo()
+##{
+#    #cd /opt/ros/indigo/
+#    source /opt/ros/indigo/setup.zsh
+#    export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages:/usr/lib/python3.4/site-packages/
+#    export PKG_CONFIG_PATH="/opt/ros/indigo/lib/pkgconfig"
+#    export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages
+#    source /home/tokunn/catkin_ws/devel/setup.zsh
+#    #cd ~/
+##}
+#
+##androidconf()
+##{
+#    export PATH="$PATH:/home/tokunn/Program/android-studio/bin"
+##}
+#
+#multiple()
 #{
-    #cd /opt/ros/indigo/
-    source /opt/ros/indigo/setup.zsh
-    export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages:/usr/lib/python3.4/site-packages/
-    export PKG_CONFIG_PATH="/opt/ros/indigo/lib/pkgconfig"
-    export PYTHONPATH=/opt/ros/indigo/lib/python2.7/site-packages
-    source /home/tokunn/catkin_ws/devel/setup.zsh
-    #cd ~/
+#    export ROS_MASTER_URI=http://172.16.14.224:11311
+#    export ROS_IP=172.16.14.114
 #}
-
-#androidconf()
-#{
-    export PATH="$PATH:/home/tokunn/Program/android-studio/bin"
-#}
-
-multiple()
-{
-    export ROS_MASTER_URI=http://172.16.14.224:11311
-    export ROS_IP=172.16.14.114
-}
