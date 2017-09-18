@@ -38,24 +38,26 @@ ${font sans-serif:normal:size=10}$sysname $kernel $alignr $machine
 Uptime:$alignr$uptime
 #File System: $alignr${fs_type}
 
-
 ${font sans-serif:bold:size=10}PROCESSORS ${hr 2}
-${font sans-serif:normal:size=10}${cpugraph 20,200 cpu}
-CPU: ${cpu  cpu}% ${cpubar 5, cpu} 
+${font sans-serif:normal:size=10}${cpugraph 20,200 cpu0}
+${font sans-serif:normal:size=10}${cpugraph 20,200 cpu1}
+${font sans-serif:normal:size=10}${cpugraph 20,200 cpu2}
+${font sans-serif:normal:size=10}${cpugraph 20,200 cpu3}
+CPU: ${cpu  cpu0}% ${cpubar 5, cpu0} 
+CPU: ${cpu  cpu1}% ${cpubar 5, cpu1} 
+CPU: ${cpu  cpu2}% ${cpubar 5, cpu2} 
+CPU: ${cpu  cpu3}% ${cpubar 5, cpu3} 
 $freq_g GHz   ${execi 1 sensors | grep 'Physical id 0' | cut -c18-21}C
-
 
 ${font sans-serif:bold:size=10}MEMORY ${hr 2}
 ${font sans-serif:normal:size=10}RAM $alignc $mem / $memmax $alignr $memperc%
 $membar
-
 
 ${font sans-serif:bold:size=10}DISKS ${hr 2}
 ${font sans-serif:normal:size=10}/ $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
 ${fs_bar /}
 #SWAP $alignc ${swap} / ${swapmax} $alignr ${swapperc}%
 #${swapbar}
-
 
 ${font sans-serif:bold:size=10}TOP PROCESSES ${hr 2}
 ${font sans-serif:normal:size=10}${top_mem name 1}${alignr}${top mem 1} %
@@ -64,10 +66,9 @@ $font${top_mem name 3}${alignr}${top mem 3} %
 $font${top_mem name 4}${alignr}${top mem 4} %
 $font${top_mem name 5}${alignr}${top mem 5} %
 $font${top_mem name 6}${alignr}${top mem 6} %
-#$font${top_mem name 7}${alignr}${top mem 7} %
+$font${top_mem name 7}${alignr}${top mem 7} %
 #$font${top_mem name 8}${alignr}${top mem 8} %
 #$font${top_mem name 9}${alignr}${top mem 9} %
-
 
 ${font sans-serif:bold:size=10}NETWORK ${hr 2}
 enp4s0
@@ -87,7 +88,6 @@ ${font sans-serif:normal:size=10}IP address: $alignr ${addr wlp2s0}
 ${downspeedgraph wlp2s0} #${upspeedgraph 20,100 wlp2s0}
 Down:${downspeed wlp2s0}/s $alignr Up:${upspeed wlp2s0}/s $alignr
 DTotal: ${totaldown wlp2s0} $alignr UTotal: ${totalup wlp2s0}
-
 
 ${font sans-serif:bold:size=10}BATTERY ${hr 2}
 ${font sans-serif:normal:size=10}State: ${battery BAT1}
