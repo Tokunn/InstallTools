@@ -39,14 +39,8 @@ Uptime:$alignr$uptime
 #File System: $alignr${fs_type}
 
 ${font sans-serif:bold:size=10}PROCESSORS ${hr 2}
-${font sans-serif:normal:size=10}${cpugraph 20,200 cpu0}
-${font sans-serif:normal:size=10}${cpugraph 20,200 cpu1}
-${font sans-serif:normal:size=10}${cpugraph 20,200 cpu2}
-${font sans-serif:normal:size=10}${cpugraph 20,200 cpu3}
-CPU: ${cpu  cpu0}% ${cpubar 5, cpu0} 
-CPU: ${cpu  cpu1}% ${cpubar 5, cpu1} 
-CPU: ${cpu  cpu2}% ${cpubar 5, cpu2} 
-CPU: ${cpu  cpu3}% ${cpubar 5, cpu3} 
+${font sans-serif:normal:size=10}${cpugraph 20,200 cpu}
+CPU: ${cpu  cpu0}% ${cpubar 5, cpu} 
 $freq_g GHz   ${execi 1 sensors | grep 'Physical id 0' | cut -c18-21}C
 
 ${font sans-serif:bold:size=10}MEMORY ${hr 2}

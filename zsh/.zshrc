@@ -75,3 +75,9 @@ autoload -U compinit && compinit
 #    export ROS_MASTER_URI=http://172.16.14.224:11311
 #    export ROS_IP=172.16.14.114
 #}
+
+fpga()
+{
+    source /opt/Xilinx/Vivado/2017.2/settings64.sh
+    export LANG=C
+}
