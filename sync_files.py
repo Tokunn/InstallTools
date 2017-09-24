@@ -29,5 +29,9 @@ def main():
     print("\n###zshrc")
     get_ipython().system('cp /home/tokunn/Program/InstallTools/zsh/.zshrc /home/tokunn/.zshrc')
 
+    print("\n###qtile")
+    get_ipython().system('mkdir -p /home/tokunn/.config/qtile')
+    get_ipython().system('cp /home/tokunn/Program/InstallTools/qtile/config.py /home/tokunn/.config/qtile/')
+
 if __name__ == '__main__':
     main()

@@ -76,8 +76,8 @@ autoload -U compinit && compinit
 #    export ROS_IP=172.16.14.114
 #}
 
+export LANG=C
 fpga()
 {
     source /opt/Xilinx/Vivado/2017.2/settings64.sh
-    export LANG=C
 }

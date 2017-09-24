@@ -44,6 +44,11 @@ def main():
     get_ipython().system('cp /home/tokunn/.zshrc /home/tokunn/Program/InstallTools/zsh/.zshrc')
     get_ipython().system('ls -l /home/tokunn/Program/InstallTools/zsh/.zshrc')
 
+    print("\n###qtile")
+    get_ipython().system('ls -l /home/tokunn/.config/qtile/config.py')
+    get_ipython().system('cp /home/tokunn/.config/qtile/config.py /home/tokunn/Program/InstallTools/qtile/')
+    get_ipython().system('ls -l /home/tokunn/Program/InstallTools/qtile/config.py')
+
     print("\n@@@ Manual Sync @@@")
     print("\tgfx_switch.py")
     print("\tgfx_switch.service")
