@@ -1,5 +1,6 @@
 xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --auto
+#xrandr --auto
 xrandr --output HDMI-1-1 --auto --output LVDS-1-1 --auto --left-of HDMI-1-1
+#xrandr --output LVDS-1-1 --auto
 #exec awesome
 exec qtile
