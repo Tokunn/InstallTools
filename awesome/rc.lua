@@ -284,6 +284,8 @@ globalkeys = gears.table.join(
         {description = "go back", group = "client"}),
 
     -- Standard program
+    awful.key({            }, "Henkan_Mode",     function () awful.screen.focus(1) end),
+    awful.key({            }, "Muhenkan",     function () awful.screen.focus(2) end),
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
