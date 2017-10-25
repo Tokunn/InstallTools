@@ -12,6 +12,7 @@ binwalk
 bison
 blender
 bzip2
+checksec
 cheese
 chromium
 clang
