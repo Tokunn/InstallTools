@@ -6,7 +6,9 @@ automake
 avr-binutils-atmel
 awesome
 bash
+bind-tools
 binutils
+binwalk
 bison
 blender
 bzip2
@@ -66,6 +68,7 @@ iw
 jad
 jd-gui
 jfsutils
+kernel-headers-musl
 less
 lib32-flashplugin
 libreoffice-fresh
@@ -97,6 +100,7 @@ mariadb
 mdadm
 metasploit
 mozc
+musl
 nano
 nasm
 nautilus
@@ -105,6 +109,7 @@ netctl
 nginx
 nkf
 nmap
+nodejs
 ntfs-3g
 ntp
 nvidia
@@ -122,6 +127,8 @@ perl
 php
 php-apache
 php-fpm
+php-sqlite
+pkcrack
 pkg-config
 powertop
 procps-ng
@@ -156,6 +163,7 @@ sed
 shadow
 sl
 socat
+strace
 sudo
 sysfsutils
 systemd-sysvcompat
