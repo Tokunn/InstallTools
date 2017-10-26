@@ -125,6 +125,7 @@ pcmanfm
 pcmciautils
 peda
 perl
+perl-image-exiftool
 php
 php-apache
 php-fpm
