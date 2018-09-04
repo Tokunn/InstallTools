@@ -7,31 +7,31 @@ import subprocess
 
 def main():
     #print("\n###rc.lua")
-    #get_ipython().system('mkdir -p /home/tokunn/.config/awesome')
-    #get_ipython().system('cp /home/tokunn/Program/InstallTools/awesome/rc.lua /home/tokunn/.config/awesome/rc.lua')
+    #get_ipython().system('mkdir -p ~/.config/awesome')
+    #get_ipython().system('cp ~/Program/InstallTools/awesome/rc.lua ~/.config/awesome/rc.lua')
 
     print("\n###vimperatorrc")
-    get_ipython().system('cp /home/tokunn/Program/InstallTools/vimperator/.vimperatorrc /home/tokunn/.vimperatorrc')
+    get_ipython().system('cp ~/Program/InstallTools/vimperator/.vimperatorrc ~/.vimperatorrc')
 
     print("\n###conkyrc")
-    get_ipython().system('cp /home/tokunn/Program/InstallTools/conky/.conkyrc /home/tokunn/.conkyrc')
+    get_ipython().system('cp ~/Program/InstallTools/conky/.conkyrc ~/.conkyrc')
 
     print("\n###vimrc")
-    get_ipython().system('cp /home/tokunn/Program/InstallTools/vim/.vimrc /home/tokunn/.vimrc')
+    get_ipython().system('cp ~/Program/InstallTools/vim/.vimrc ~/.vimrc')
 
     #print("\n###vim/template")
-    #get_ipython().system('mkdir -p /home/tokunn/.vim')
-    #get_ipython().system('cp -r /home/tokunn/Program/InstallTools/vim/.vim/template /home/tokunn/.vim/template')
+    #get_ipython().system('mkdir -p ~/.vim')
+    #get_ipython().system('cp -r ~/Program/InstallTools/vim/.vim/template ~/.vim/template')
 
     print("\n###xinitrc")
-    get_ipython().system('cp /home/tokunn/Program/InstallTools/xorg/.xinitrc /home/tokunn/.xinitrc')
+    get_ipython().system('cp ~/Program/InstallTools/xorg/.xinitrc ~/.xinitrc')
 
     print("\n###zshrc")
-    get_ipython().system('cp /home/tokunn/Program/InstallTools/zsh/.zshrc /home/tokunn/.zshrc')
+    get_ipython().system('cp ~/Program/InstallTools/zsh/.zshrc ~/.zshrc')
 
     print("\n###qtile")
-    get_ipython().system('mkdir -p /home/tokunn/.config/qtile')
-    get_ipython().system('cp /home/tokunn/Program/InstallTools/qtile/config.py /home/tokunn/.config/qtile/')
+    get_ipython().system('mkdir -p ~/.config/qtile')
+    get_ipython().system('cp ~/Program/InstallTools/qtile/config.py ~/.config/qtile/')
 
 if __name__ == '__main__':
     main()
