@@ -3,6 +3,7 @@ autoconf
 automake
 awesome
 bash
+bat
 bind-tools
 binutils
 binwalk
@@ -12,9 +13,9 @@ chromium
 cmake
 conky
 coreutils
-dex2jar
 cryptsetup
 device-mapper
+dex2jar
 dhcpcd
 diffutils
 dosfstools
@@ -58,7 +59,7 @@ ipython
 ipython2
 iw
 jad
-jd-gui
+jd-gui-bin
 jfsutils
 kernel-headers-musl
 less
@@ -68,6 +69,7 @@ licenses
 linux
 linux-headers
 logrotate
+lsb-release
 lsof
 ltrace
 lvm2
@@ -79,7 +81,6 @@ mdadm
 metasploit
 mozc
 msieve
-musl
 nano
 nasm
 nautilus
@@ -128,7 +129,7 @@ python2-scipy
 python2-sympy
 radare2
 reiserfsprogs
-rp++
+rp++-git
 s-nail
 scapy
 screen
