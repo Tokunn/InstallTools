@@ -18,6 +18,8 @@ def main():
 
     print("\n###vimrc")
     get_ipython().system('cp ~/Program/InstallTools/vim/.vimrc ~/.vimrc')
+    get_ipython().system('mkdir -p ~/.vim-backup')
+    get_ipython().system('mkdir -p ~/.vim-swap')
 
     #print("\n###vim/template")
     #get_ipython().system('mkdir -p ~/.vim')
